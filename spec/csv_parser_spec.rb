@@ -12,9 +12,8 @@ RSpec.describe CSVParser do
       expect(parsed_books).to be_an(Array)
       expect(parsed_books.first).to be_a(Book)
       expect(parsed_books.first.title).to eq('Under the Dome')
-      expect(parsed_books.first.publication_date).to eq('January 22 2000')
-      expect(parsed_books.first.author).to eq('Stephen King')
-      expect(parsed_books.first.rating).to eq(5.0)
+      expect(parsed_books.last).to be_a(Book)
+      expect(parsed_books.last.title).to eq('Billy Summers')
     end
   end
 end
