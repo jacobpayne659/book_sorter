@@ -16,7 +16,7 @@ class BookSorter
   end
 
   def sort_by_rating_and_title
-    @books.select { |book| book.rating != 'No rating' && book.rating.to_f.between?(0, 5) }
+    @books.select { |book| book.rating.positive? }
           .sort_by { |book| [book.rating.to_f, ignore_articles(book.title)] }
           .reverse
   end

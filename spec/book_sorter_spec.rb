@@ -32,7 +32,7 @@ RSpec.describe BookSorter do
 
     it 'sorts the books correctly and ignores leading articles' do
       expect(sorted_books.first.title).to eq('Under the Dome')
-      expect(sorted_books.last.title).to eq('Cloud Cuckoo Land')
+      expect(sorted_books.last.title).to eq('The Code Breaker')
     end
   end
 
