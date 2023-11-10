@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require_relative '../book_sorter'
-require_relative '../book'
+require_relative '../app/book_sorter'
+require_relative '../app/book'
 
 RSpec.describe BookSorter do
   let(:books) do

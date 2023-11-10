@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # csv_parser_spec.rb
-require_relative '../csv_parser' # adjust the path as necessary
+require_relative '../app/csv_parser' # adjust the path as necessary
 
 RSpec.describe CSVParser do
   describe '.parse' do
