@@ -37,8 +37,8 @@ To run the BookSorter application, you can use the `main.rb` script. Execute the
 ```
 ruby app/main.rb
 ```
-
-You can also pass a specific CSV file as an argument to the script:
+This will run the script using the input provided in the instructions.
+You can also pass a specific CSV file as an argument to the script for additional testing:
 ```
 ruby app/main.rb path/to/your/books.csv
 ```
