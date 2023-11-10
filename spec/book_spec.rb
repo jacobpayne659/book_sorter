@@ -1,32 +1,37 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require_relative '../book'
 
-# book_spec.rb
 RSpec.describe Book do
-  subject(:book) { described_class.new(title, publication_date, author, rating) }
+  subject(:book) do
+    Book.new(
+      title,
+      publication_date,
+      author,
+      rating
+    )
+  end
 
-  let(:title) { 'The best book in the world' }
-  let(:publication_date) { 'June 6 2000' }
-  let(:author) { 'Billy Boborgenson' }
-  let(:rating) { '2.2' }
+  let(:title) { ' 1984 ' }
+  let(:publication_date) { ' 1949 ' }
+  let(:author) { ' George Orwell ' }
+  let(:rating) { ' 4.5 ' }
 
   describe 'initialization' do
-    it 'strips whitespace from the title' do
-      expect(book.title).to eq(title)
+    it 'strips title' do
+      expect(book.title).to eq('1984')
     end
 
-    it 'strips whitespace from the publication date' do
-      expect(book.publication_date).to eq(publication_date)
+    it 'strips publication date' do
+      expect(book.publication_date).to eq('1949')
     end
 
-    it 'strips whitespace from the author' do
-      expect(book.author).to eq(author)
+    it 'strips author name' do
+      expect(book.author).to eq('George Orwell')
     end
 
-    it 'converts rating to float and strips whitespace' do
-      expect(book.rating).to eq(rating.to_f)
+    it 'converts rating to float and strips it' do
+      expect(book.rating).to eq(4.5)
     end
   end
 end
