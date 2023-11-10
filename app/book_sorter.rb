@@ -18,7 +18,6 @@ class BookSorter
   def sort_by_rating_and_title
     @books.select { |book| book.rating.positive? }
           .sort_by { |book| [book.rating.to_f, ignore_articles(book.title)] }
-          .reverse
   end
 
   def sort_by_title_descending
