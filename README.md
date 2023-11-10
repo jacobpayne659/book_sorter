@@ -39,7 +39,7 @@ ruby app/main.rb
 ```
 
 ## Running Tests
-Tests are written using RSpec, a behavior-driven development (BDD) framework for Ruby. To run the tests, you'll need to have RSpec installed. If you've already run bundle install, RSpec should be ready to use.
+Tests are written using RSpec. To run the tests, you'll need to have RSpec installed. If you've already run bundle install, RSpec should be ready to use.
 
 To execute the tests, run the following command from the root of the project:
 
