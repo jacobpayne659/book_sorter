@@ -38,6 +38,11 @@ To run the BookSorter application, you can use the `main.rb` script. Execute the
 ruby app/main.rb
 ```
 
+You can also pass a specific CSV file as an argument to the script:
+```
+ruby app/main.rb path/to/your/books.csv
+```
+
 ## Running Tests
 Tests are written using RSpec. To run the tests, you'll need to have RSpec installed. If you've already run bundle install, RSpec should be ready to use.
 
