@@ -51,5 +51,8 @@ To execute the tests, run the following command from the root of the project:
 ```
 bundle exec rspec
 ```
+Or simply
+```
+rspec
+```
 This will run all the test suites and output the results to your terminal, showing you which tests have passed and which have failed.
-
